@@ -137,34 +137,35 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-background text-foreground">
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-[#20245b]/95 text-white backdrop-blur-xl">
-        <div className="mx-auto flex h-[72px] max-w-[1440px] items-center gap-4 px-4 sm:px-6 lg:px-8">
-          <div className="flex min-w-0 items-center gap-3">
-            <div className="grid size-10 shrink-0 place-items-center rounded-xl bg-[#ffca55] text-[#20245b] shadow-[0_8px_24px_rgba(255,202,85,.25)]">
-              <BookOpen className="size-5" strokeWidth={2.4} />
-            </div>
-            <div className="min-w-0">
-              <p className="truncate font-heading text-[15px] font-bold tracking-tight">Red de Libros</p>
-              <p className="truncate text-xs text-indigo-200">Latinoamérica</p>
-            </div>
+      <header className="sticky top-0 z-40 border-b border-[#dbe7ef] bg-white/95 text-[#134f7f] shadow-[0_4px_20px_rgba(24,77,118,.05)] backdrop-blur-xl">
+        <div className="mx-auto flex h-[78px] max-w-[1440px] items-center gap-4 px-4 sm:px-6 lg:px-8">
+          <div className="flex min-w-0 items-center">
+            <Image
+              src="/bbt-logo.png"
+              alt="The Bhaktivedanta Book Trust"
+              width={1034}
+              height={320}
+              priority
+              className="h-auto w-[148px] object-contain sm:w-[190px]"
+            />
           </div>
 
           <nav className="ml-8 hidden items-center gap-1 lg:flex" aria-label="Navegación principal">
-            <Button className="h-9 bg-white/12 px-4 text-white hover:bg-white/18">Panorama</Button>
-            <Button variant="ghost" className="h-9 px-4 text-indigo-100 hover:bg-white/10 hover:text-white">Grupos</Button>
-            <Button variant="ghost" className="h-9 px-4 text-indigo-100 hover:bg-white/10 hover:text-white">Actividad</Button>
+            <Button className="h-9 bg-[#0d67aa] px-4 text-white hover:bg-[#09588f]">Panorama</Button>
+            <Button variant="ghost" className="h-9 px-4 text-[#365f7e] hover:bg-[#eaf4fb] hover:text-[#0d67aa]">Grupos</Button>
+            <Button variant="ghost" className="h-9 px-4 text-[#365f7e] hover:bg-[#eaf4fb] hover:text-[#0d67aa]">Actividad</Button>
           </nav>
 
           <div className="ml-auto flex items-center gap-2">
-            <Button variant="ghost" size="icon" className="hidden text-indigo-100 hover:bg-white/10 hover:text-white sm:inline-flex" aria-label="Notificaciones">
+            <Button variant="ghost" size="icon" className="hidden text-[#365f7e] hover:bg-[#eaf4fb] hover:text-[#0d67aa] sm:inline-flex" aria-label="Notificaciones">
               <Bell />
             </Button>
-            <div className="hidden h-8 w-px bg-white/15 sm:block" />
+            <div className="hidden h-8 w-px bg-[#dbe7ef] sm:block" />
             <div className="hidden items-center gap-2.5 sm:flex">
-              <span className="grid size-9 place-items-center rounded-full bg-[#7567f8] text-xs font-bold">BC</span>
+              <span className="grid size-9 place-items-center rounded-full bg-[#e6f2fa] text-xs font-bold text-[#0d67aa]">BC</span>
               <div>
-                <p className="text-sm font-semibold leading-tight">Bogotá Centro</p>
-                <p className="text-xs text-indigo-200">Coordinación</p>
+                <p className="text-sm font-semibold leading-tight text-[#24455f]">Bogotá Centro</p>
+                <p className="text-xs text-[#66839a]">Coordinación</p>
               </div>
             </div>
             <Dialog open={dialogOpen} onOpenChange={setDialogOpen}>
@@ -269,7 +270,7 @@ export default function Home() {
               <p className="font-heading text-[clamp(3.3rem,8vw,6.5rem)] font-black leading-[.8] tracking-[-0.07em] tabular-nums">{formatNumber(latinTotal)}</p>
               <p className="pb-1 text-base font-semibold text-indigo-200 sm:pb-2 sm:text-lg">libros distribuidos</p>
             </div>
-            <p className="mt-5 max-w-xl text-sm leading-6 text-indigo-100">El esfuerzo conjunto de 116 grupos activos, sumado en una sola cifra para inspirar a toda la comunidad.</p>
+            <p className="mt-5 max-w-xl text-sm leading-6 text-indigo-100">El esfuerzo conjunto de 103 grupos activos de 108 registrados, sumado en una sola cifra para inspirar a toda la comunidad.</p>
           </div>
           <div className="relative z-10 mt-8 rounded-2xl border border-white/10 bg-white/[.07] p-5 backdrop-blur-sm lg:mt-0">
             <div className="mb-4 flex items-center justify-between gap-3">
@@ -286,7 +287,7 @@ export default function Home() {
         <section className="mb-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           <MetricCard icon={<BookOpen />} label="Tu grupo este año" value={formatNumber(groupTotal)} helper="+12% frente al año anterior" color="violet" />
           <MetricCard icon={<Flame />} label="Maratón de diciembre" value="18.450" helper="74% de la meta del grupo" color="coral" />
-          <MetricCard icon={<Users />} label="Grupos activos" value="116 / 120" helper="96% reportó actividad" color="teal" />
+          <MetricCard icon={<Users />} label="Grupos en la maratón" value="103 / 108" helper="95% reportó actividad" color="teal" />
           <MetricCard icon={<Camera />} label="Evidencias compartidas" value="1.284" helper="62 nuevas esta semana" color="yellow" />
         </section>
 
@@ -350,7 +351,7 @@ export default function Home() {
                 </li>
               ))}
             </ol>
-            <Button variant="ghost" className="mt-3 h-10 w-full justify-between rounded-xl text-[#5144d8] hover:bg-[#f2f0ff] hover:text-[#4236bd]">Ver los 120 grupos <ChevronRight /></Button>
+            <Button variant="ghost" className="mt-3 h-10 w-full justify-between rounded-xl text-[#5144d8] hover:bg-[#f2f0ff] hover:text-[#4236bd]">Ver los 108 grupos <ChevronRight /></Button>
           </aside>
         </section>
 

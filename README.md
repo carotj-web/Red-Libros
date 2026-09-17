@@ -5,7 +5,7 @@ Prototipo web basado en el audio suministrado. Permite visualizar el avance de l
 ## Incluye
 
 - Récord general latinoamericano y avance frente a la meta anual.
-- Indicadores del grupo, la maratón de diciembre, grupos activos y evidencias.
+- Indicadores del grupo, la maratón de diciembre, seguimiento de hasta 108 grupos y evidencias.
 - Comparación entre el ritmo anual y la maratón.
 - Clasificación de grupos.
 - Actividad comunitaria con evidencia visual.
@@ -35,7 +35,10 @@ npm run build
 - `app/globals.css`: identidad visual y estilos globales.
 - `app/layout.tsx`: metadatos y configuración en español.
 - `public/evidencia-distribucion.png`: imagen demostrativa generada para el prototipo.
+- `public/bbt-logo.png`: logo suministrado de The Bhaktivedanta Book Trust.
 
 ## Alcance del prototipo
 
 Los datos son demostrativos. Los registros actualizan el tablero durante la sesión actual; una versión de producción requerirá autenticación, base de datos y almacenamiento permanente para las fotografías.
+
+Consulta [ANALISIS-CAPACIDAD-Y-COSTOS.md](ANALISIS-CAPACIDAD-Y-COSTOS.md) para la evaluación de 108 grupos, concurrencia, infraestructura y propuesta comercial.
