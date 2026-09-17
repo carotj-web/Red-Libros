@@ -31,6 +31,10 @@ Para verificar la versión de producción:
 npm run build
 ```
 
+## Desplegar en Vercel
+
+Importa este repositorio en Vercel con el directorio raíz del proyecto. Vercel instalará Next.js, ejecutará `npm run build` y servirá la ruta `/` automáticamente. No uses Wrangler ni configures `dist/server` en Vercel.
+
 ## Estructura principal
 
 - `app/page.tsx`: tablero e interacciones.
