@@ -23,6 +23,8 @@ npm run dev
 
 Después, abre `http://localhost:3000`.
 
+El comando `dev` construye la aplicación y la sirve con Wrangler para evitar el bloqueo conocido del renderizador de desarrollo de `vinext` en este proyecto.
+
 Para verificar la versión de producción:
 
 ```bash
