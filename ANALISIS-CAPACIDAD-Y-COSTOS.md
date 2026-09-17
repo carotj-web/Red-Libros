@@ -57,23 +57,41 @@ Fuentes oficiales:
 
 ## Cómo cobrar la aplicación
 
-Conviene separar el costo real de infraestructura del valor comercial del software, el acompañamiento y el soporte.
+El acuerdo comercial definido es el siguiente:
 
-### Propuesta recomendada
+- **Desarrollo y entrega de la aplicación:** COP 6.000.000, pago único.
+- **Cobro mensual:** únicamente el costo real de los servicios de nube utilizados, sin soporte, mantenimiento, utilidad ni recargo.
+- **Dominio:** se cobra por separado cuando corresponda, porque normalmente es un pago anual.
+- **Nuevas funciones o cambios:** requieren una cotización independiente.
 
-- **Puesta en producción:** COP 8.000.000 a COP 15.000.000 una sola vez. Incluye autenticación, base de datos, almacenamiento de fotos, roles, importación de los 108 grupos, capacitación y salida a producción.
-- **Licencia y soporte:** COP 700.000 a COP 1.500.000 mensuales. Puede incluir alojamiento, monitoreo, respaldos, soporte y mejoras menores.
-- **Alternativa anual:** COP 9.000.000 a COP 15.000.000 al año, con infraestructura incluida y condiciones de uso claras.
+### Valor mensual esperado
 
-Si el presupuesto disponible es exactamente **COP 6.000.000**, debe tratarse como un MVP limitado: 108 grupos, un administrador general, máximo dos coordinadores por grupo, registro de libros, fotografías, tablero básico, capacitación y un periodo corto de garantía. El soporte posterior, el dominio y las mejoras deben cotizarse aparte.
+Con la TRM de COP 3.100,45 por dólar del 16 de septiembre de 2026:
 
-No es recomendable cobrar únicamente el costo del servidor. El mayor valor está en el desarrollo, la seguridad, la capacitación, la responsabilidad de operación y el soporte durante la maratón de diciembre.
+- Workers Paid por USD 5 equivale aproximadamente a **COP 15.502**, antes de impuestos y diferencias de la tarjeta.
+- D1 y R2 inicialmente pueden no producir cobros adicionales porque el uso esperado está dentro de sus cuotas incluidas.
+- Un presupuesto prudente para nube, sin correo pagado, es de **COP 20.000 a COP 30.000 mensuales** durante la primera etapa.
+- Si se contrata correo transaccional por USD 20, el total de servicios sería aproximadamente USD 25, es decir **COP 77.511 antes de impuestos**; con impuestos y variación cambiaria conviene reservar alrededor de COP 90.000 a COP 100.000.
+
+[TRM oficial del Banco de la República](https://www.banrep.gov.co/es/glosario/tasa-cambio-trm).
+
+### Fórmula de cobro mensual
+
+Para que el cobro sea completamente transparente, no se recomienda fijar una mensualidad comercial. Debe cobrarse el valor de la factura real:
+
+`Mensualidad = facturas de nube en USD × tasa efectivamente cobrada por el banco + impuestos`
+
+Se debe adjuntar la factura o captura del proveedor. Si durante un mes el costo es cero, la mensualidad de infraestructura también debe ser cero. Otra opción práctica es cobrar un anticipo de COP 30.000 y hacer una conciliación trimestral a favor o en contra del cliente.
+
+### Texto sugerido para la cotización
+
+> El valor total por desarrollo y entrega de la aplicación es de COP 6.000.000. Adicionalmente, el cliente asumirá mensualmente, sin margen ni recargo, el costo efectivo de los servicios de infraestructura en la nube necesarios para su funcionamiento. Este pago mensual no incluye soporte, mantenimiento, actualizaciones ni nuevas funcionalidades. Los valores se liquidarán con base en las facturas de los proveedores y la tasa de cambio efectivamente aplicada por el medio de pago.
 
 ## Condiciones que deberían quedar por escrito
 
 - Número de grupos y cuentas incluidas.
 - Límite de almacenamiento y tamaño de fotografía.
-- Horario y tiempo de respuesta del soporte.
+- Aclaración expresa de que no se incluye soporte ni mantenimiento mensual.
 - Propiedad del código y de los datos.
 - Valor de nuevas funciones.
 - Política de respaldo, privacidad y eliminación de fotografías.
